@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useAuth } from "@/contexts/AuthContext"
@@ -57,7 +56,9 @@ const MainLayout = ({ children, requireAuth = true }: MainLayoutProps) => {
       {isAuthenticated && isSidebarOpen && <Sidebar isOpen={isSidebarOpen} onToggle={toggleSidebar} />}
 
       <div
-        className={`flex flex-col flex-1 overflow-hidden ${isSidebarOpen ? "ml-64" : "ml-0"} transition-all duration-300`}
+        className={`flex flex-col flex-1 overflow-hidden ${
+          isSidebarOpen ? "ml-64" : "ml-0"
+        } transition-all duration-300`}
       >
         {isAuthenticated && <TopBar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />}
 

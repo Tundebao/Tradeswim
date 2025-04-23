@@ -4,5 +4,10 @@
   "private": true,
   "scripts": {
     "build": "echo 'no build script'"
-  }
+  },
+  "main": "ecosystem.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
